@@ -9,36 +9,145 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/jpg" href="logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="cool"><a href="#header" class="top">Top</a></div>
+
 
     <!-- Header Section -->
-    <header>
-        <h1>JAMES EMMANUEL</h1>
-        <p>Web Developer | Designer | Programmer</p>
+    <header id="header">
+        <img src="logo.jpg" alt="CodeKyng Logo">
         <nav>
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
         </nav>
+        <a class="header-btn hover" href="#contact">Let's Talk</a>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm James Emmanuel,I’m a passionate front-end web developer focused on creating responsive, 
-            user-friendly websites using HTML, CSS, and Bootstrap. I love turning ideas into elegant, functional 
-            interfaces that work seamlessly across all devices.</p>
+    <section id="hero" class="hero">
+        <div>
+            <h1>Hi, I'm <br><span>CodeKyng</span></h1>
+            <hr />
+            <p>I'm a passionate web developer, designer, and programmer.<br /> I create beautiful and functional
+                websites and
+                applications that provide great user experiences.</p>
+            <div class="hero-btn">
+                <button class="cta">Let's Talk!</button>
+                <button class="btn">Download CV</button>
+            </div>
+        </div>
+        <img class="reveal" src="codekyng.jpg" alt="Hero Image">
     </section>
-
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <p>Designing clean scalable responsive websites!</p>
+        <div class="service">
+            <div class="service-card">
+                <h3>Front-End Development</h3>
+                <p>Responsive interfaces using HTML, CSS and JavaScript for clean, consistent, reliable performance.</p>
+                <hr>
+                <div class="card-child">
+                    <span>Clean React/ TailwindCss</span>
+                    <span>Smooth Interactions</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <h3>Performance & Responsiveness</h3>
+                <p>Fast, mobile-first websites optimized for speed, accessibility, and dependable performance.</p>
+                <hr>
+                <div class="card-child">
+                    <span>Speed Optimization</span>
+                    <span>Asset Efficiency</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <h3>WordPress Implementation</h3>
+                <p>Lightweight Wordpress setups with easy updates, fast loading and scalable, clean , customizable
+                    layouts.</p>
+                <hr>
+                <div class="card-child">
+                    <span>Theme Setup</span>
+                    <span>Easy Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a <span>Front-End Developer</span> passionate about crafting clean, intuitive and responsive digital
+            experiences. I focus on turning ideas into seamless interfaces by understanding your users needs, designing
+            thoughtful UI layouts and ensuring smooth interactions across devices.</p>
+        <h2>My Approach</h2>
+        <div class="approach">
+            <p><span>1</span> Understand Users and Goals</p>
+            <p><span>2</span> Create clean UI layouts.</p>
+            <p><span>3</span> Responsive Experiences</p>
+        </div>
+        <div class="achievements">
+            <h3><span class="num">02+</span><span>Years of Experience</span></h3>
+            <h3><span class="num">15+</span><span>Projects Completions</span></h3>
+            <h3><span class="num">05+</span><span>Clients Served</span></h3>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p>Crafting seamless UI/UX and clean code</p>
+        <div class="skills-cards">
+            <div class="card">
+                <h3>Core Skills</h3>
+                <div class="skill">
+                    <p>Front-End Dev</p>
+                    <p>Responsive Web Dev</p>
+                    <p>Component Based Dev</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Front-End Tech</h3>
+                <div class="skill">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>TailwindCss</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tech Tools</h3>
+                <div class="skill">
+                    <p>WorPress</p>
+                    <p>Shopify</p>
+                    <p>WooCommerce</p>
+                    <p>Antigravity</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Interactions</h3>
+                <div class="skill">
+                    <p>GitHub</p>
+                    <p>Netlify</p>
+                    <p>ShadCN UI</p>
+                    <p>oAuth</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects">
         <h2>My Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-cards">
             <div class="project">
                 <h3>Project 1</h3>
+                <img src="BetterPortfolio1.png" alt="Project 1 Image">
                 <p>Description of your project.</p>
                 <div class="project-tech">
                     <span>HTML</span>
@@ -46,12 +155,16 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="project-links">
-                    <a href="" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    <a href="" target="_blank" class="btn"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fas fa-external-link-alt"></i>
+                        Live
+                        Demo</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fab fa-github"></i> Source
+                        Code</a>
                 </div>
             </div>
             <div class="project">
                 <h3>Project 2</h3>
+                <img src="BetterPortfolio2.png" alt="Project 2 Image">
                 <p>Description of your project.</p>
                 <div class="project-tech">
                     <span>React</span>
@@ -59,12 +172,16 @@
                     <span>MongoDB</span>
                 </div>
                 <div class="project-links">
-                    <a href="" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    <a href="" target="_blank" class="btn"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fas fa-external-link-alt"></i>
+                        Live
+                        Demo</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fab fa-github"></i> Source
+                        Code</a>
                 </div>
             </div>
             <div class="project">
                 <h3>Project 3</h3>
+                <img src="BetterPortfolio3.png" alt="Project 3 Image">
                 <p>Description of your project.</p>
                 <div class="project-tech">
                     <span>Bootstrap</span>
@@ -72,16 +189,34 @@
                     <span>MySQL</span>
                 </div>
                 <div class="project-links">
-                    <a href="" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    <a href="" target="_blank" class="btn"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fas fa-external-link-alt"></i>
+                        Live
+                        Demo</a>
+                    <a href="" target="_blank" class="project-location hover"><i class="fab fa-github"></i> Source
+                        Code</a>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mnqvydqv" method="POST">
+            <label for="Name">
+                Name:
+                <input type="text" placeholder="John Doe" required>
+            </label>
+            <label for="Name">
+                Email:
+                <input type="email" placeholder="John.Doe@example.com" required>
+            </label>
+            <label for="message">
+                Comment:
+                <textarea name="message" id="message" placeholder="What's on your mind?"></textarea>
+            </label>
+            <input type="submit" value="Submit" class="submit hover">
+        </form>
+        <p id="status"></p>
         <p>If you'd like to get in touch, feel free to reach out through any of the following platforms:</p>
         <div class="contact-grid">
             <a href="mailto:jamesemmanuelojonimi123@gmail.com" class="contact-item">
@@ -98,12 +233,11 @@
             </a>
         </div>
     </section>
-
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 JAMES EMMANUEL. All rights reserved.</p>
+        <p><span>&copy;</span> 2024 JAMES EMMANUEL. All rights reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>
